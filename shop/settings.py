@@ -83,12 +83,8 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'shop',
-        'USER': 'codigo',
-        'PASSWORD': 'codigo2022',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'shopdb.sqlite3',
     }
 }
 
@@ -148,4 +144,4 @@ cloudinary.config(
 
 PAYPAL_TEST = True
 
-PAYPAL_RECEIVER_EMAIL = 'sb-hbs9v12881528@business.example.com'
+PAYPAL_RECEIVER_EMAIL = 'sb-mogul17110000@business.example.com'
